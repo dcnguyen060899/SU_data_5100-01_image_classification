@@ -1,1 +1,5 @@
-init requirements.txt file
+torch
+fastai
+Pillow
+matplotlib
+numpy
