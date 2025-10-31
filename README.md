@@ -7,7 +7,7 @@ This project develops an automated waste classification system using deep learni
 ### Data sourced from Kaggle:
 
 - **Kaggle Waste Classification Dataset**: 2,527 waste images organized into six categories for recyclable material classification
-  - From Kaggle: [Waste Classification Data](https://www.kaggle.com/datasets/techsash/waste-classification-data)
+  - From Kaggle: [Garbage Classification Data](https://www.kaggle.com/datasets/asdasdasasdas/garbage-classification)
   - License: Open source for educational and research purposes
 
 **Dataset Structure:**
