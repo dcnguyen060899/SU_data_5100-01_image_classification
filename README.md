@@ -44,9 +44,9 @@ This project requires the following Python packages:
 - **numpy**: Numerical computations
 
 **Environment:**
-- Python 3.8+
+- Python
 - Jupyter Notebook/Lab (Local GPU prefered if permitted) or Google Colab (Remote GPU recommended)
-- CUDA 11+ (for GPU acceleration)
+- CUDA (for GPU acceleration)
 
 All dependencies are listed in `requirements.txt`. Run `pip install -r requirements.txt` to install libraries.
 
