@@ -42,7 +42,7 @@ This project requires the following Python packages:
 
 **Environment:**
 - Python 3.8+
-- Jupyter Notebook/Lab or Google Colab (GPU recommended)
+- Jupyter Notebook/Lab (Local GPU prefered if permitted) or Google Colab (Remote GPU recommended)
 - CUDA 11+ (for GPU acceleration)
 
 All dependencies are listed in `requirements.txt`. Run `pip install -r requirements.txt` to install libraries.
