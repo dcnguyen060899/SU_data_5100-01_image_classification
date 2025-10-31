@@ -28,7 +28,10 @@ data/Garbage_classification/
 - Paper class (majority) represents 23.5% (594 images)
 - Imbalance ratio: 4.3:1 (majority:minority)
 
-**REPRODUCIBILITY NOTE:** We keep a .gitattributes file in the data/ folder so GitHub stores our large image dataset with Git LFS. This ensures the exact dataset versions are preserved for reproducible results and keeps repository clones fast.
+**REPRODUCIBILITY NOTE:** 
+- We keep a .gitattributes file in the data/ folder so GitHub stores our large image dataset with Git LFS. This ensures the exact dataset versions are preserved for reproducible results and keeps repository clones fast. 
+- **Important:** Since `get_image_files(path)` recursively finds ALL images under the specified path, any images placed inside `data/` risk being included in training. For reproducible workflows, external test images should be stored OUTSIDE the `data/` directory (e.g., in a separate `external_testing/` folder at the project root) to guarantee they are never seen during model training.
+
 
 ## Requirements
 This project requires the following Python packages:
