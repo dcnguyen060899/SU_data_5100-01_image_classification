@@ -29,7 +29,8 @@ data/Garbage_classification/
 - Imbalance ratio: 4.3:1 (majority:minority)
 
 **REPRODUCIBILITY NOTE:** 
-- We keep a .gitattributes file in the data/ folder so GitHub stores our large image dataset with Git LFS. This ensures the exact dataset versions are preserved for reproducible results and keeps repository clones fast. 
+- We use Git LFS (.gitattributes files) in both the data/ and saved_classification_models/ folders to efficiently store large files on GitHub. The image dataset (2,527 images) and trained model files (4 models, ~83 MB each) are tracked with LFS, ensuring exact dataset and model versions are preserved for reproducible results while keeping repository clones fast. The saved models allow anyone to reproduce the exact performance metrics (94.0% accuracy, confusion matrices, etc.) reported in our analysis without retraining.
+
 - **Important:** Since `get_image_files(path)` recursively finds ALL images under the specified path, any images placed inside `data/` risk being included in training. For reproducible workflows, external test images should be stored OUTSIDE the `data/` directory (e.g., in a separate `external_testing/` folder at the project root) to guarantee they are never seen during model training.
 
 
@@ -48,7 +49,7 @@ This project requires the following Python packages:
 - Jupyter Notebook/Lab (Local GPU prefered if permitted) or Google Colab (Remote GPU recommended)
 - CUDA (for GPU acceleration)
 
-All dependencies are listed in `requirements.txt`. Run `pip install -r requirements.txt` to install libraries.
+All dependencies are listed in `requirements.txt`. Run `pip install -r "requirements.txt"` to install libraries.
 
 ## Analysis
 The complete data preparation, model training, evaluation, and comparative analysis are documented in [image_classification.ipynb](https://github.com/dcnguyen060899/SU_data_5100-01_image_classification/blob/main/code/image_classification.ipynb), located in the code folder.
