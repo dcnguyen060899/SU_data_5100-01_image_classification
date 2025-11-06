@@ -1,4 +1,4 @@
-torch
+torch # included torch-vision
 fastai
 Pillow
 matplotlib
