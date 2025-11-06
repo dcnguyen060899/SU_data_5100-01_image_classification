@@ -121,8 +121,8 @@ The complete findings and recommendations from this analysis are documented in s
    - Training speed: Conservative is 10% faster due to simpler transformations
 
 3. **Double-Weighting Problem Confirmed:**
-   - Combining oversampling + weighted loss causes minority classes to receive 79x more emphasis than appropriate
-   - Calculation: 4.3x frequency (oversampling) × 18.4x penalty (weighted loss) = 79.9x total emphasis
+   - Combining oversampling + weighted loss causes minority classes to receive 80x more emphasis than appropriate
+   - Calculation: 4.3x frequency (oversampling) × 18.4x penalty (weighted loss) = ~80x total emphasis
    - This is multiplicative, not additive, because learning pressure = (frequency) × (penalty per occurrence)
    - Result: Both approaches (weighted-only and combined) achieved identical poor performance (89.9% accuracy)
    - Paper class accuracy dropped from 95.8% to 87.4% due to over-emphasis on minority classes
