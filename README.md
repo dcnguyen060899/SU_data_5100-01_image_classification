@@ -176,6 +176,7 @@ MS in Data Science - Seattle University
 Contacts:
 - [Email](mailto:dcnguyen060899@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/duwe-ng/)
+- [Portfolio](duyng-portfolio.com)
 
 ## License
 This project is licensed under the [MIT License](LICENSE) - Copyright (c) 2025 Duy Nguyen
